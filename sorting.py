@@ -3,12 +3,12 @@ def sort(Str):
 
 data = []
 with open("a.txt") as f:
-    for lineA in f:
-        data.append(lineA.strip())
+    for line in f:
+        data.append(line.strip())
         
 with open("b.txt", "r") as f:
-    for lineB in f:
-        data.append(lineB.strip())
+    for line in f:
+        data.append(line.strip())
 
 data.sort(key = sort)
 print(data)
