@@ -1,5 +1,5 @@
-def sortByAlphabet(inputStr):
-        return inputStr[0] # Ключом является первый символ в каждой строке, сортируем по нему
+def sort(Str):
+        return Str[0] # Ключом является первый символ в каждой строке, сортируем по нему
 
 data = []
 with open("a.txt") as f:
@@ -10,7 +10,7 @@ with open("b.txt", "r") as f:
     for lineB in f:
         data.append(lineB.strip())
 
-data.sort(key = sortByAlphabet)
+data.sort(key = sort)
 print(data)
 
 with open("c.txt", "w") as f:
